@@ -359,10 +359,10 @@ window.onload = function() {
                     Run = false;
                     dialog.style.display = 'block';
                     Resetbutton.addEventListener('click', function() {
-                        window.location.href = 'Game.html'; // 遷移先のURL
+                        window.location.href = "Game.html"; // 遷移先のURL
                     });
                     Closebutton.addEventListener('click', function() {
-                        window.location.href = 'index.html';
+                        window.location.href = "index.html";
                     });
                     document.getElementById('gameOverScore').innerHTML = "あなたの撃破数は " + EnemyScore + " です"; // スコアを表示
                 }
@@ -395,10 +395,10 @@ function mouseDown(event) {
 
     // ダイアログ表示時にボタンのイベントリスナーを設定
     Resetbutton.addEventListener('click', function() {
-        window.location.href = 'Game.html'; // 遷移先のURL
+        window.location.href = "Game.html"; // 遷移先のURL
     });
     Closebutton.addEventListener('click', function() {
-        window.location.href = 'index.html';
+        window.location.href = "index.html";
     });
 }
 
