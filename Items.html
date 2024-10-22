@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="sample.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        .aisatu {
+            font-style: italic;
+            font-size: 45px;
+            color: #4169e1;
+            filter: drop-shadow(10px 10px 5px #47585c);
+        }
+
+        body {
+            background-image: url(Gazou/black_00014.jpg);
+            display: flex;
+            flex-direction: column; /* 縦方向にレイアウト */
+            justify-content: space-between; /* 上下にスペースを分ける */
+            height: 100vh; /* ビューポートの高さを100%に */
+            margin: 0; /* デフォルトのマージンを削除 */
+        }
+
+        
+
+        .btn-circle-black {
+            display: inline-block; /* インラインブロック要素として表示。幅や高さを設定できる */
+            text-decoration: none; /* リンクの下線を消す */
+            color: white; /* テキストの色を白に設定 */
+            width: 150px; /* ボタンの幅を150pxに設定 */
+            height: 150px; /* ボタンの高さを150pxに設定 */
+            line-height: 150px; /* 行の高さを150pxに設定し、テキストを縦中央に揃える */
+            border-radius: 50%; /* 角を丸くして円形にする */
+            text-align: center; /* テキストを中央に揃える */
+            overflow: hidden; /* コンテンツがボタンの境界を超えた場合、隠す */
+            background-image: linear-gradient(45deg, black 0%, white 100%); /* 45度のグラデーション背景を設定（黒から白） */
+            transition: .4s; /* ホバー時などの効果に0.4秒のスムーズな遷移を設定 */
+            margin: 20px auto; /* 上下の余白を設定し中央揃え */
+        }
+        .btn-circle-white {
+            display: inline-block; /* インラインブロック要素として表示。幅や高さを設定できる */
+            text-decoration: none; /* リンクの下線を消す */
+            color: black; /* テキストの色を白に設定 */
+            width: 150px; /* ボタンの幅を150pxに設定 */
+            height: 150px; /* ボタンの高さを150pxに設定 */
+            line-height: 150px; /* 行の高さを150pxに設定し、テキストを縦中央に揃える */
+            border-radius: 50%; /* 角を丸くして円形にする */
+            text-align: center; /* テキストを中央に揃える */
+            overflow: hidden; /* コンテンツがボタンの境界を超えた場合、隠す */
+            background-image: linear-gradient(45deg, white 0%, black 100%); /* 45度のグラデーション背景を設定（黒から白） */
+            transition: .4s; /* ホバー時などの効果に0.4秒のスムーズな遷移を設定 */
+            margin: 20px auto; /* 上下の余白を設定し中央揃え */
+        }
+
+        .btn-container {
+            display: flex; /* フレックスボックスを使用 */
+            justify-content: center; /* 中央揃え */
+            margin-bottom: 20px; /* 下部の余白 */
+        }
+
+        .bordered {
+        border: 2px solid white; /* ボーダーの設定 */
+        padding: 2px; /* 内側の余白を追加（オプション） */
+        margin: 10px; /* 外側の余白を追加（オプション） */
+    
+        }
+    </style>
+    <title>既制作物一覧ページ</title>
+</head>
+<body>
+    <h1 class="aisatu">既制作物紹介ページ</h1>
+    <div class="content">
+        <table>
+            <tr>
+                <td><h2><span style="color:#ffd900">・数字当てゲーム</span></h2></td>
+            </tr>
+            <tr>
+                <td><img src="Seisaku/Num.png" width="650" height="550" class="bordered"></td>
+                <td>&nbsp;</td>
+                <td>
+                    <p><span style="color:white">数字を１つ当てるモードと2つ当てるモードを作成。</span></p>
+                    <p><span style="color:white">文でループ構造を作り数字を当てるとプログラムを終了し、</span></p>
+                    <p><span style="color:white">数字当てが終わるまでに何度数字を入力したか結果を表示する簡単なプログラムを作成しました。</span></p>
+                    <p><span style="color:white">授業内で作成した１つ数字を当てるプログラムを再構築して、２つ当たった際にプログラム終了するように改良しました。</span></p>
+                </td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <td><h2><span style="color:#ffd900">・単語帳アプリ</span></h2></td>
+            </tr>
+            <tr>
+                <td><img src="Seisaku/Quize.png" width="650" height="550"class="bordered"></td>
+                <td>&nbsp;</td>
+                <td>
+                    <p><span style="color:white">単語帳プログラミング。</span></p>
+                    <p><span style="color:white">単語パッケージの問題集から、ランダムに問題を出題して、</span></p>
+                    <p><span style="color:white">それを回答させ成否を判断するプログラムを作成しました。</span></p>
+                    <p><span style="color:white">Switch文で問題を記述しているために問題の作成が容易になっている工夫を施しています。</span></p>
+                    <p><h3><span style="color:#dbd0e6"><u>所感</u></span></h3></p>
+                    <p><span style="color:white">Javaを学びだしてから実際どのような活用法がこの言語にはできるのだろうかと、</span></p>
+                    <p><span style="color:white">素人ながらに考えてこれまで習ったものを活用して作ったプログラミング作品の第１作品目。</span></p>
+                    <p><span style="color:white">特に難しかった点は、他のメソッドでも問題と解答を示し合わせて合否の参照を行うコーディングを考えるのと実際そのコードを練るのが難しかったです。</span></p>
+                    <p><span style="color:white">今後の課題点としては、キーボードの２を押すことでExcelなどの外部機能と連携させて問題の追加などを行えたら良かったと感じます。</span></p>
+                </td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <td><h2><span style="color:#ffd900">・ロジックダンジョンゲーム</span></h2></td>
+            </tr>
+            <tr>
+                <td><img src="Seisaku/Battle.png" width="650" height="550"class="bordered"></td>
+                <td>&nbsp;</td>
+                <td>
+                    <p><span style="color:white">文字で表すRPGの様なゲームプログラミング。</span></p>
+                    <p><span style="color:white">プレイアブルキャラクターを選び、ダンジョンに潜る。</span></p>
+                    <p><span style="color:white">その中で、いくつかのモンスターとのバトルを行い戦ってダンジョンのどの階層まで潜っていけるかを競うプログラム。</span></p>
+                    <p><h3><span style="color:#dbd0e6"><u>所感</u></span></h3></p>
+                    <p><span style="color:white">Java講義の集大成として作った簡単なゲームのようなプログラミング。</span></p>
+                    <p><span style="color:white">特に難しかった点は、多くのパッケージとクラスでモンスターや、キャラクターの変数内の数値を保持しながら駆使していくためのコーディングを考える点と実際組んでみて全く機能しなくて何度も振出しに戻ることもありその部分の修正のみで１～２週間費やしたりといった苦難があった。</span></p>
+                    <p><span style="color:white">今後の課題としては、敵を倒した際に経験値などを実装してプレイアブルキャラクターのLV.制度などを実装出来たらと思いました。</span></p>
+                </td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <td><h2><span style="color:#ffd900">・High＆Low ゲーム</span></h2></td>
+            </tr>
+            <tr>
+                <td><img src="Seisaku/Card.png" width="450" height="550"></td>
+                <td>&nbsp;</td>
+                <td>
+                    <p><span style="color:white">ハイ＆ローゲーム</span></p>
+                    <p><span style="color:white">手持ちのランダム生成された値のカードと相手のカードの数値を高いか、低いかを競い、</span></p>
+                    <p><span style="color:white">掛け金をどこまで増やせるかを楽しむシンプルなカードゲーム。</span></p>
+                    <p><h3><span style="color:#dbd0e6"><u>所感</u></span></h3></p>
+                    <p><span style="color:white">Android Studio の製作１作品目。</span></p>
+                    <p><span style="color:white">Android Studioがかなり優秀で、考え方さえわかれば、あとは予測記述で何とか作れたが、</span></p>
+                    <p><span style="color:white">やはりAndroid Studioならではの考え方やコードを考えるのが難しく感じた。</span></p>
+                    <p><span style="color:white">これまで学んだJavaの考え方も多く流用できる場面もあり、</span></p>
+                    <p><span style="color:white">掛け金を累乗で増やすメソッドなどをその考え方で制作を行うことが出来た。</span></p>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="btn-container">
+        <a href="C:\Users\ict01\Documents\制作物\TOP.html" class="btn-circle-black">TOPへ</a>
+        <a href="C:\Users\ict01\Documents\制作物\Profile.html" class="btn-circle-white">プロフィールへ</a>
+    </div>
+</body>
+</html>

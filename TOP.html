@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOPページ</title>
+
+    <style>
+
+        body {
+            background-size: cover; /* 背景画像をカバーする */
+            background-position: center; /* 中央に配置 */
+            margin: 0; /* デフォルトのマージンをリセット */
+            height: 100vh; /* ビューポートの高さに合わせる */
+            display: flex; /* 中央揃えのためにフレックスボックスを使用 */
+            flex-direction: column; /* 縦に並べる */
+            justify-content: center; /* 縦中央に配置 */
+            align-items: center; /* 横中央に配置 */
+            color: black; /* テキストの色 */
+            -webkit-text-stroke-width: 0.5px;
+            -webkit-text-stroke-color: aliceblue;
+            
+        }
+
+        .aisatu {
+            font-style: italic;
+            font-size: 45px;
+            color: yellow;
+            filter: drop-shadow(10px 10px 5px #47585c);
+        }
+        
+
+        .right-align {
+    text-align: right; /* 右寄せ */
+    margin: 0; /* デフォルトのマージンをリセット */
+    width: 100%; /* 幅を100%に設定して右寄せを有効にする */
+    margin-right: 120px;
+}
+
+        #typewriter {
+            font-size: 48px; /* テキストサイズ */
+            color: #4169e1; /* テキストの色 */
+            filter: drop-shadow(10px 10px 5px black);
+        }
+
+        .btn-circle-blue {
+            background-image: linear-gradient(45deg, #709dff 0%, #91fdb7 100%);
+            width: 150px;
+            height: 150px;
+            line-height: 150px;
+            border-radius: 50%;
+            text-align: center;
+            text-decoration: none;
+            margin:  20px;
+        }
+
+        .btn-circle-red {
+            background-image: linear-gradient(45deg, #dc143c 0%, #ffd700 100%);
+            width: 150px;
+            height: 150px;
+            line-height: 150px;
+            border-radius: 50%;
+            text-align: center;
+            text-decoration: none;
+            margin:  20px;
+        }
+        .btn-circle-yellow {
+            background-image: linear-gradient(45deg, #ffd700 0%, #ffb6c1 100%);
+            width: 150px;
+            height: 150px;
+            line-height: 150px;
+            border-radius: 50%;
+            text-align: center;
+            text-decoration: none;
+            margin:  20px;
+        }
+
+        .button-container {
+            display: flex; /* フレックスボックスを使用 */
+            justify-content: center; /* 中央に配置 */
+            margin-top: 20px; /* ボタンの上にスペース */
+            
+        }
+
+    </style>
+
+</head>
+<h1 class="aisatu">～ご挨拶～</h1>
+
+<body onload="init()">
+    <h1 id="typewriter">ポートフォリオサイトにようこそ！</h1><
+    
+    <script>
+        var i = 0;
+        var text = "ポートフォリオサイトにようこそ！";
+
+        function TypeWriter() {
+            document.getElementById("typewriter").innerText = text.substring(0, i++);
+            if (i <= text.length) {
+                setTimeout(TypeWriter, 300);
+            }
+        }
+
+        function setBackground() {
+            var Time = new Date();
+            var currentTime = Time.getHours();
+            var backgroundImage;
+
+            // 時間帯によって画像を選択
+            switch (true) {
+                case (0 <= currentTime && currentTime < 6):
+                    backgroundImage = "url(Gazou/night.png)";
+                    break;
+                case (6 <= currentTime && currentTime < 12):
+                    backgroundImage = "url(Gazou/morning.png)";
+                    break;
+                case (12 <= currentTime && currentTime < 18):
+                    backgroundImage = "url(Gazou/afternoon.png)";
+                    break;
+                case (18 <= currentTime && currentTime < 24):
+                    backgroundImage = "url(Gazou/night.png)";
+                    break;
+            }
+
+            // bodyの背景画像を設定
+            document.body.style.backgroundImage = backgroundImage;
+        }
+
+        function init() {
+            TypeWriter(); // タイプライター効果を開始
+            setBackground(); // 背景画像を設定
+        }
+    </script>
+
+    <h2>ここでは、私の作品やスキルを紹介しています。</h2>
+    <h2>このホームページの目的は、私のプログラム能力を少しでも分かり易く理解していただけるようなポートフォリオとしてのHP制作を行っています。</h2>
+
+    <div class="button-container">
+    <a href="C:\Users\ict01\Documents\制作物\Profile.html" class="btn-circle-blue">プロフィール</a>
+    <a href="C:\Users\ict01\Documents\制作物\12ばんどうろ.html" class="btn-circle-yellow">Extra</a>
+    <a href="C:\Users\ict01\Documents\制作物\Adress.html" class="btn-circle-red">お問い合わせ</a>
+    
+    </div>
+    <p>
+        
+    </p>
+</body>
+<h6 class="right-align">
+</h6>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="sample.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .aisatu {
+            font-style: italic;
+            font-size: 55px;
+            color: #4169e1;
+            filter: drop-shadow(10px 10px 5px #47585c);
+            position: absolute; /* 絶対位置 */
+            top: 10%;
+            left: 38%;
+            animation: flash 3s linear infinite;
+        }
+
+        @keyframes flash {
+            0%, 100% {
+                opacity: 0.5;
+            }
+            35% {
+                opacity: 1;
+                color: #FFF59D;
+            }
+            65% {
+                opacity: 1;
+                color: #5654a2;
+            }
+        }
+
+        body {
+            background-image: url(Gazou/black_00014.jpg);
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* 縦方向の中央揃え */
+            align-items: center; /* 横方向の中央揃え */
+            height: 100vh; /* ビューポートの高さを100%に */
+            margin: 0; /* デフォルトのマージンを削除 */
+        }
+
+        .btn-circle-blue, .btn-circle-yellow, .btn-circle-parple {
+            display: inline-block; /* インラインブロック要素として表示 */
+            text-decoration: none; /* リンクの下線を消す */
+            color: black; /* テキストの色を白に設定 */
+            width: 160px; /* ボタンの幅を160pxに設定 */
+            height: 160px; /* ボタンの高さを160pxに設定 */
+            line-height: 160px; /* 行の高さを160pxに設定し、テキストを縦中央に揃える */
+            border-radius: 50%; /* 角を丸くして円形にする */
+            text-align: center; /* テキストを中央に揃える */
+            overflow: hidden; /* コンテンツがボタンの境界を超えた場合、隠す */
+            transition: .4s; /* ホバー時などの効果に0.4秒のスムーズな遷移を設定 */
+            margin: 10px; /* 上下の余白を設定 */
+        }
+
+        .btn-circle-blue {
+            background-image: linear-gradient(45deg, #83ccd2 0%, #f7fcfe 100%); /* グラデーション背景 */
+        }
+
+        .btn-circle-yellow {
+            background-image: linear-gradient(45deg, #fcc800 0%, #fffacd 100%); /* グラデーション背景 */
+        }
+
+        .btn-circle-parple {
+            background-image: linear-gradient(45deg, #5654a2 0%, #dbd0e6 100%); /* グラデーション背景 */
+        }
+
+        .btn-container {
+            display: flex; /* フレックスボックスを使用 */
+            justify-content: flex-start; /* 左寄せ */
+            margin-bottom: 20px; /* 下部の余白 */
+        }
+
+        /* メニューリスト */
+        .ul {
+            list-style: none; /* リストマーカーを非表示に */
+            padding: 0; /* デフォルトのパディングを削除 */
+            margin: 0; /* デフォルトのマージンを削除 */
+        }
+
+        .list {
+            list-style: none; /* リストマーカーを非表示に */
+            position: absolute; /* 絶対位置 */
+            top: 10%;
+            right: 15%;
+            display: flex;
+            flex-direction: column; /* 縦方向に並べる */
+            align-items: flex-start; /* アイテムを左寄せ */
+        }
+
+        .item {
+            padding: 10px 20px; /* 上下に10px、左右に20pxのパディングを追加 */
+            background-color: #f0f0f0; /* 背景色を追加 */
+            margin-bottom: 10px; /* 各アイテムの下にマージンを追加 */
+            border-radius: 5px; /* 角を丸くする */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* シャドウを追加 */
+            text-align: center; /* テキストを中央揃え */
+        }
+    </style>
+
+    <title>12番道路</title>
+</head>
+<body>
+    <ul class="list">
+        <li class="item"><a href="C:\Users\ict01\Documents\制作物\TOP.html">TOPへ</a></li>
+        <li class="item"><a href="C:\Users\ict01\Documents\制作物\Profile.html">プロフィールへ</a></li>
+        <li class="item"><a href="C:\Users\ict01\Documents\制作物\Adress.html">お問い合わせ</a></li>
+    </ul>
+    
+    <h1 class="aisatu">Extra Contents</h1>
+    
+    <div class="btn-container">
+        <a href="C:\Users\ict01\Documents\制作物\TOP.html" class="btn-circle-blue">TOPへ</a>
+        <a href="C:\Users\ict01\Documents\制作物\Game.html" class="btn-circle-yellow">STG</a>
+        <a href="C:\Users\ict01\Documents\制作物\Mine.html" class="btn-circle-parple">Mine</a>
+    </div>
+    
+</body>
+</html>

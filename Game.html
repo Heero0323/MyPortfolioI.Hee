@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <style>
+        .aisatu {
+            font-size: 5em;
+            text-align: center;
+            line-height: 0.95em;
+            font-weight: bold;
+            color: #000;
+            text-shadow: 
+                0 0 0.05em #FFF59D,
+                0 0 0.06em #FFF59D,
+                0 0 0.07em #FFF59D,
+                0 0 0.08em #FFF59D,
+                0 0 0.09em #FFF59D,
+                0 0 0.20em #FFF59D,
+                0 0 0.20em #FFF59D,
+                0 0 0.20em #FFF59D,
+                0 0 0.50em #FFF59D;
+            filter: drop-shadow(10px 10px 5px #47585c);
+        }
+
+        body {
+            background-image: url(Gazou/black_00014.jpg);
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* 縦方向の中央揃え */
+            align-items: center; /* 横方向の中央揃え */
+            height: 100vh; /* ビューポートの高さを100%に */
+            margin: 0; /* デフォルトのマージンを削除 */
+        }
+
+        .btn-circle-white {
+            display: inline-block;
+            text-decoration: none;
+            color: black;
+            width: 120px;
+            height: 120px;
+            line-height: 120px;
+            border-radius: 50%;
+            text-align: center;
+            overflow: hidden;
+            background-image: linear-gradient(45deg, white 0%,black 100%);
+            transition: .4s;
+            margin: 20px; /* 上下の余白を設定し中央揃え */
+        }
+
+        .btn-circle-yellow {
+            display: inline-block;
+            text-decoration: none;
+            color: black;
+            width: 120px;
+            height: 120px;
+            line-height: 120px;
+            border-radius: 50%;
+            text-align: center;
+            overflow: hidden;
+            background-image: linear-gradient(45deg, white 0%, #FFF59D 100%);
+            transition: .4s;
+            margin: 20px; /* 上下の余白を設定し中央揃え */
+        }
+
+        .btn-circle-blue {
+            display: inline-block;
+            text-decoration: none;
+            color: black;
+            width: 120px;
+            height: 120px;
+            line-height: 120px;
+            border-radius: 50%;
+            text-align: center;
+            overflow: hidden;
+            background-image: linear-gradient(45deg,#00ced1 0%, #7fffd4 100%);
+            transition: .4s;
+            margin: 20px ; /* 上下の余白を設定し中央揃え */
+        }
+
+        .right-align {
+            text-align: right;
+            margin: 0;
+            width: 95%;
+            margin-right: 0px;
+        }
+
+        canvas {
+            background-color: #000;
+            border: 1px solid white;
+            width: 800px; /* 幅を800pxに設定 */
+            height: 650px; /* 高さを650pxに設定 */
+        }
+
+       
+
+    </style>
+</head>
+<body>
+    <h1 class="aisatu">Shooting Game</h1>
+    <canvas id="screen" width="800" height="650"></canvas>
+    <p id="info"></p>
+
+    <div id="dialog" style="display: none;">
+        <p style=" color :white">　~GAME OVER~</p>
+        <p id="gameOverScore" style="color: white;"></p>
+        <button id="Reset">再チャレンジ</button>
+        <button id="Close">TOPへ</button>
+    </div>
+
+    
+    <div class="right-align">
+        <a href="C:\Users\ict01\Documents\制作物\12ばんどうろ.html" class="btn-circle-blue">Extraへ</a>
+        <a href="C:\Users\ict01\Documents\制作物\TOP.html" class="btn-circle-white">TOPへ</a>
+        <a href="C:\Users\ict01\Documents\制作物\Game.html" class="btn-circle-yellow">Reset</a>
+    </div>
+    <script src="JS/stg.js">
+
+        </script>
+</body>
+</html>

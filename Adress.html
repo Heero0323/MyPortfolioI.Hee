@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="sample.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .aisatu {
+    font-style: italic;
+    font-size: 45px;
+    color: #4169e1;
+    filter: drop-shadow(10px 10px 5px #47585c) ;
+}
+body {
+	background-image: url(Gazou/pastel_00053.jpg);
+    width: auto;
+    height: auto;
+}
+.btn-circle-black {
+    display: inline-block; /* インラインブロック要素として表示。幅や高さを設定できる */
+    text-decoration: none; /* リンクの下線を消す */
+    color: white; /* テキストの色を白に設定 */
+    width: 150px; /* ボタンの幅を150pxに設定 */
+    height: 150px; /* ボタンの高さを150pxに設定 */
+    line-height: 150px; /* 行の高さを150pxに設定し、テキストを縦中央に揃える */
+    border-radius: 50%; /* 角を丸くして円形にする */
+    text-align: center; /* テキストを中央に揃える */
+    overflow: hidden; /* コンテンツがボタンの境界を超えた場合、隠す */
+    background-image: linear-gradient(45deg, black 0%, white 100%); /* 45度のグラデーション背景を設定（黒から白） */
+    transition: .4s; /* ホバー時などの効果に0.4秒のスムーズな遷移を設定 */
+}
+
+.btn-container {
+    display: flex; /* フレックスボックスを使用 */
+    justify-content: flex-end; /* 右寄せ */
+    margin-bottom: 20px; /* 下部の余白 */
+    margin-right: 100px;
+}
+.privacy-policy {
+  color: black;
+  font-size: 14px;
+  border: 1px solid black;
+  border-radius: 4px;
+  width: 700px;
+  height: 200px;
+  overflow-y: scroll;
+  padding: 6px 12px;
+  background-color: white;
+}
+
+.naiyo {
+  color: black;
+  font-size: 14px;
+  border: 1px solid black;
+  border-radius: 4px;
+  width: 300px;
+  height: 100px;
+  
+  background-color: white;
+}
+input[type="text"] {
+            width: 180px; /* 幅を100%に */
+            height: 60px; /* 高さを設定 */
+            padding: 10px; /* 内側の余白を追加 */
+            box-sizing: border-box; /* 幅と高さにパディングを含める */
+            line-height: 3; /* 行の高さを設定し、縦の余白を増やす */
+        }
+    </style>
+    <title>お問合せページ</title>
+</head>
+<body>
+    <h1 class="aisatu">～お問合せ/企業連絡ページ～</h1>
+    <h2><u> 私の　Mail Adress: ict01@mailAdress.co.jp</u></h2>
+    <p></p>
+    <h2>問い合わせフォーム</h2>
+
+    <form action="ict01@mailAdress.co.jp" method="post">
+    <div>
+       <p> <label for="Adress">Adress:</label><br>
+        <input type="Adress" /></p>
+        <p>
+            <label for="message" class="message">Message:</label><br>
+            <textarea id="message" rows="4" maxlength="20" 
+            style="width: 180px; height: 30px;  padding: 60px;"></textarea>
+            
+        </p>                 
+    
+    
+    </p>
+    </div>
+    
+    <p></p>
+    <div id="privacyPolicy" class="privacy-policy">
+        プライバシーポリシーのテキスト
+       第1条（個人情報）
+       「個人情報」の利用規約・・・
+
+     </div>
+    <input type="radio" name="利用規約" value="同意しました">同意しました
+    <input type="radio" name="利用規約" value="同意しません">同意しません
+    <p></p>
+    <input type="submit" value = "送信する"> (テンプレートの為、送信しないでください)
+    </form>
+
+
+
+
+    
+    <div class="btn-container">
+    <a href="C:\Users\ict01\Documents\制作物\TOP.html" class="btn-circle-black">TOPへ</a>
+    </div>
+</body>
+</html>

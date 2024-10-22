@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="sample.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho" rel="stylesheet">
+    <style>
+
+        .aisatu {
+    font-style: italic;
+    font-size: 45px;
+    color: #4169e1;
+    filter: drop-shadow(10px 10px 5px #47585c) ;
+}
+body {
+	background-image: url(Gazou/pastel_00053.jpg);
+    width: auto;
+    height: auto;
+}
+
+.btn-back1 {
+            display: inline-block; /* ブロック要素として扱う */
+            padding: 10px 20px; /* 内側の余白 */
+            background-image: url('Gazou/btn1.png'); /* 画像の正しいパスを指定 */
+            background-size: cover; /* 画像をボタンにフィットさせる */
+            color: white; /* 文字色 */
+            filter: drop-shadow(10px 10px 5px#478384) ;
+            text-decoration: none; /* リンクの下線を消す */
+            border: none; /* ボーダーを消す */
+            border-radius: 0; /* 角を四角くする */
+            font-size: 16px; /* フォントサイズ */
+            cursor: pointer; /* カーソルをポインターに */
+            width: 450px; /* ボタンの幅 */
+            height: 200px; /* ボタンの高さ */
+            display: flex; /* 中央揃えのためにフレックスボックスを使用 */
+            align-items: center; /* 縦方向中央揃え */
+            justify-content: center; /* 横方向中央揃え */
+            background-color: rgba(0, 0, 0, 0.1); /* 背景色を透過させる */
+            position: relative; /* 相対位置を指定 */
+            margin:5px;
+        }
+        .btn-back2 {
+            display: inline-block; /* ブロック要素として扱う */
+            display: flex;
+            padding: 10px 20px; /* 内側の余白 */
+            background-image: url('Gazou/Book.jpg'); /* 画像の正しいパスを指定 */
+            background-size: cover; /* 画像をボタンにフィットさせる */
+            color: white; /* 文字色 */
+            filter: drop-shadow(10px 10px 5px#683f36) ;
+            text-decoration: none; /* リンクの下線を消す */
+            border: none; /* ボーダーを消す */
+            border-radius: 0; /* 角を四角くする */
+            font-size: 16px; /* フォントサイズ */
+            cursor: pointer; /* カーソルをポインターに */
+            width: 450px; /* ボタンの幅 */
+            height: 200px; /* ボタンの高さ */
+            display: flex; /* 中央揃えのためにフレックスボックスを使用 */
+            align-items: center; /* 縦方向中央揃え */
+            justify-content: center; /* 横方向中央揃え */
+            background-color: rgba(0, 0, 0, 0.1); /* 背景色を透過させる */
+            position: relative; /* 相対位置を指定 */
+            margin:5px;
+        }
+
+        .btn-back1:hover {
+            opacity: 0.8; /* ホバー時の透明度を変更 */
+        }
+        .btn-back2:hover {
+            opacity: 0.8; /* ホバー時の透明度を変更 */
+        }
+
+        .btn-container {
+            display: flex; /* フレックスボックスを使用 */
+            justify-content: center; /* 中央揃え */
+            gap: 20px; /* ボタン間のスペース */
+            margin-top: 5px; /* 上部の余白 */
+        }
+        
+        .btn-circle-black {
+    display: inline-block; /* インラインブロック要素として表示。幅や高さを設定できる */
+    text-decoration: none; /* リンクの下線を消す */
+    color: white; /* テキストの色を白に設定 */
+    width: 200px; /* ボタンの幅を100pxに設定 */
+    height: 200px; /* ボタンの高さを100pxに設定 */
+    line-height: 200px; /* 行の高さを100pxに設定し、テキストを縦中央に揃える */
+    border-radius: 50%; /* 角を丸くして円形にする */
+    text-align: center; /* テキストを中央に揃える */
+    overflow: hidden; /* コンテンツがボタンの境界を超えた場合、隠す */
+    background-image: linear-gradient(45deg, black 0%, white 100%); /* 45度のグラデーション背景を設定（黒から白） */
+    transition: .4s; /* ホバー時などの効果に0.4秒のスムーズな遷移を設定 */
+    margin-top:5px;
+}
+.circle-image {
+    width: 400px; /* 幅を設定 */
+    height: 400px; /* 高さを設定 */
+    border-radius: 50%; /* 丸くトリミング */
+    object-fit: cover; /* 画像が指定されたサイズに収まるように */
+    border: 2px solid #4169e1; /* 任意でボーダーを追加 */
+    margin: 0; /* デフォルトのマージンをリセット */
+    margin-right: 350px;
+    margin-top: 30px;
+}
+
+.square{
+    width: 250px; /* 幅を設定 */
+    height: 250px; /* 高さを設定 */
+    object-fit: cover; /* 画像が指定されたサイズに収まるように */
+    border: 2px solid #4169e1; /* 任意でボーダーを追加 */
+    margin: 0; /* デフォルトのマージンをリセット */
+    margin-right: 300px;
+    margin-top: 0px;
+}
+.square2{
+    width: 250px; /* 幅を設定 */
+    height: 250px; /* 高さを設定 */
+    object-fit: cover; /* 画像が指定されたサイズに収まるように */
+    border: 2px solid #4169e1; /* 任意でボーダーを追加 */
+    margin: 0; /* デフォルトのマージンをリセット */
+    margin-right: 100px;
+    margin-top: 0px;
+}
+
+.text-margin{
+    flex-direction: column;
+    height: 100vh;
+    margin-left: 70px;
+}
+
+        .sawarabi{
+    font-family: 'Sawarabi Mincho', sans-serif;
+}
+    </style>
+
+    <title>プロフィール</title>
+</head>
+
+<body>
+    <table>
+        <tr>
+    <div class="text-margin">
+    <img src="Gazou/My2.jpeg" class="circle-image" alt="Description" style= "float:right ;">
+    <h1 class="aisatu">～プロフィール～</h1>
+    <h2 style="font-size: 46px;"><span style = "color :#d3381c" >I.H</span></h2>
+    <h3>・<span style = "color :#005243">年齢:</span>
+        <h3><div class="sawarabi">　　23歳(2024時点)</div></h3>
+    <h3>・<span style = "color :#005243">性別:</span><span style = "color :#4169e1"> 男</span></h3>
+    <h3>・<span style = "color :#005243">出身地:</span>京都府</h3>
+    <h3>・<span style = "color :#005243">学歴:</span></h3>
+    <img src="Gazou/R.jpg" class="square" alt="Description" style= "float:right ;">
+    <img src="Gazou/kibune.jpg" class="square2" alt="Description" style= "float:right ;">
+        <h3><div class="sawarabi">　　京都某私大　外国語学部　(2023年卒業)</div></h3>
+    <h3>・<span style = "color :#005243">職歴:</span></h3>
+        <h3><div class="sawarabi">　　2023年4月　建築業界　総務部入社(正社員)</div></h3>
+        <h3><div class="sawarabi">　　2023年11月 同上建築業界　退社</div></h3>
+    <h3>・<span style = "color :#005243">趣味/特技:</span></h3>
+        <h3><div class="sawarabi">　　映画鑑賞,音楽鑑賞,ロシア語</div></h3>
+    <h3>・<span style = "color :#005243">保有資格:</span></h3>
+        <h3><div class="sawarabi">　　普通AT車限定免許,ITパスポート,色彩検定3,情報処理検定3,漢字検定準2</div></h3>
+    </tr>
+</table>
+    <div class="btn-container">
+        <a href="C:\Users\ict01\Documents\制作物\Items.html" class="btn-back1">これまでの制作物</a>
+        <a href="C:\Users\ict01\Documents\制作物\Coacging.html" class="btn-back2">履修内容</a>
+        <a href="C:\Users\ict01\Documents\制作物\TOP.html" class="btn-circle-black">TOPへ</a>
+    </div>
+</div>
+    
+    
+
+    
+    
+</body>
+</html>
