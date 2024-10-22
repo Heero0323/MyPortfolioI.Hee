@@ -172,10 +172,10 @@ function mouseDown(event) {
                     
                     // ダイアログ表示時にボタンのイベントリスナーを設定
                     Resetbutton.addEventListener('click', function() {
-                        window.location.href = 'file:///C:/Users/ict01/Documents/制作物/Mine.html'; // 遷移先のURL
+                        window.location.href = 'Mine.html'; // 遷移先のURL
                     });
                     Closebutton.addEventListener('click', function() {
-                        window.location.href = 'file:///C:/Users/ict01/Documents/制作物/TOP.html';
+                        window.location.href = 'index.html';
                     });
                     
                     Run = false;
@@ -214,10 +214,10 @@ function checkClear() {
         document.getElementById('now').innerHTML ="Clear!　" + "経過時間は " + elapsedTime + " 秒です"; // 経過時間を表示
             
         Resetbutton.addEventListener('click', function() {
-            window.location.href = 'file:///C:/Users/ict01/Documents/制作物/Mine.html'; // 遷移先のURL
+            window.location.href = 'Mine.html'; // 遷移先のURL
         });
         Closebutton.addEventListener('click', function() {
-            window.location.href = 'file:///C:/Users/ict01/Documents/制作物/TOP.html';
+            window.location.href = 'index.html';
         });
         Run = false;
     }
